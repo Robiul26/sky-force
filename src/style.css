@@ -1,0 +1,39 @@
+h2{
+    color: white;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    user-select: none;
+}
+span{
+    background: url('../img/plane.png');
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
