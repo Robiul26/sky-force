@@ -1,12 +1,12 @@
 const bodyEl = document.querySelector("body");
 const score = document.getElementById('score');
 let amount = 0;
-let audio = new Audio('../audio/sound.wav');
+let audio = new Audio("../audio/sound.wav");
 
 bodyEl.addEventListener("click", (e) => {
     amount++;
     score.innerHTML = amount;
-    audio.play();
+    audio.play()
 
 
     const xPosition = e.offsetX;
