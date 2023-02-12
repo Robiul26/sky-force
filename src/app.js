@@ -1,12 +1,18 @@
 const bodyEl = document.querySelector("body");
 const score = document.getElementById('score');
 let amount = 0;
-let audio = new Audio("../audio/sound.wav");
+
+var audio = new Audio("../audio/sounds_en_a.m4a");
 
 bodyEl.addEventListener("click", (e) => {
     amount++;
     score.innerHTML = amount;
-    audio.play()
+    // play
+    audio.play();
+    audio.crossOrigin = "anonymous";
+    audio.addEventListener("canplaythrough", function() {
+        audio.play();
+    })
 
 
     const xPosition = e.offsetX;
