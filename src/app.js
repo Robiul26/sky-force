@@ -8,7 +8,7 @@ bodyEl.addEventListener("click", (e) => {
     amount++;
     score.innerHTML = amount;
     // play
-    audio.play();
+    // audio.play();
     audio.crossOrigin = "anonymous";
     audio.addEventListener("canplaythrough", function() {
         audio.play();
