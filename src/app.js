@@ -26,6 +26,6 @@ bodyEl.addEventListener("click", (e) => {
 
 bodyEl.addEventListener("click", function (e) {
     // play
-    var audio = new Audio("./audio/sounds_en_a.m4a");
+    var audio = new Audio("./audio/sound.wav");
     audio.play();
 });
