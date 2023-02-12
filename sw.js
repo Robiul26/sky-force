@@ -6,7 +6,7 @@ self.addEventListener("install", e => {
                 "./src/style.css",
                 "./src/app.js",
                 "./img/bg.jpg",
-                "./audio/release.mp3",
+                // "./audio/sound.wav",
                 "./img/plane.png",
                 "./img/icon_192x192.png",
                 "./img/icon_512x512.png"
