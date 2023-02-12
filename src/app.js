@@ -2,18 +2,10 @@ const bodyEl = document.querySelector("body");
 const score = document.getElementById('score');
 let amount = 0;
 
-var audio = new Audio("../audio/sounds_en_a.m4a");
 
 bodyEl.addEventListener("click", (e) => {
     amount++;
     score.innerHTML = amount;
-    // play
-    // audio.play();
-    audio.crossOrigin = "anonymous";
-    audio.addEventListener("canplaythrough", function() {
-        audio.play();
-    })
-
 
     const xPosition = e.offsetX;
     const yposition = e.offsetY;
@@ -30,4 +22,10 @@ bodyEl.addEventListener("click", (e) => {
     setTimeout(() => {
         spanEl.remove();
     }, 3000);
+});
+
+bodyEl.addEventListener("click", function (e) {
+    // play
+    var audio = new Audio("../audio/sounds_en_a.m4a");
+    audio.play();
 });
